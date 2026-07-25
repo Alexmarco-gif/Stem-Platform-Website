@@ -1,0 +1,33 @@
+# Stem Systems Ltd | Stem-Cogent
+
+Stem-Cogent is a product of Stem Systems Ltd. It is a Nigerian business intelligence and decision intelligence platform built for fintech and financial-services companies.
+
+## Core Services
+- **Business Intelligence Nigeria**: Real-time market monitoring and competitor tracking.
+- **Stem-Cogent**: A proprietary signal lens that filters market noise into actionable briefs.
+- **Fintech Data Analytics**: Detecting meaningful changes in payment trends and regulatory shifts.
+- **Decision Intelligence**: Educational resources and tools for high-value strategic calls.
+
+## Founding Team
+- **Odion O. Alex**: CEO & AI Engineer at Stem Systems Ltd. Expert in building intelligent systems for the financial ecosystem.
+- **Gift Chinedu Nduka**: CSO & Strategic Operator at Stem Systems Ltd. Expert in scaling businesses and commercial direction.
+
+## Key Features
+- **Early Market Shift Identification**: Spotting trends in African fintech before they become public.
+- **Real-time Data**: Monitoring Nigerian payment trends and regulatory (CBN) circulars.
+- **NDPR Compliant**: Ensuring data protection and security for financial institutions.
+- **Waitlist Model**: Currently in limited rollout for strategy and growth teams.
+
+## Important Pages
+- Homepage: https://thestemgrid.com
+- About & Team: https://thestemgrid.com/about
+- Platform: https://thestemgrid.com/platform
+- Solutions: https://thestemgrid.com/solutions
+- Use Cases: https://thestemgrid.com/use-cases
+- Join Waitlist: https://thestemgrid.com/waitlist
+- Sitemap: https://thestemgrid.com/sitemap.xml
+
+## Contact & Profiles
+- LinkedIn (Odion O. Alex): https://www.linkedin.com/in/alex-marco1820/
+- LinkedIn (Gift Chinedu Nduka): https://www.linkedin.com/in/gift-nduka/
+- Email: stemsystem883@gmail.com

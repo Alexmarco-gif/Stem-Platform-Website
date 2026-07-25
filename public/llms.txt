@@ -1,0 +1,63 @@
+# Stem-Cogent
+
+> Decision intelligence for African financial services.
+
+Stem-Cogent is a product of Stem Systems Ltd. It is a Nigeria-first decision
+intelligence platform for fintech and financial-services leadership, strategy,
+growth, product, risk, operations, research, and intelligence teams.
+
+Stem-Cogent turns regulatory, infrastructure, competitor, consumer, payment,
+and market signals into validated, explainable, decision-ready intelligence.
+The platform is currently in a limited private-access rollout.
+
+## Core principles
+
+- Early: identify meaningful market changes before they become obvious.
+- Explainable: provide confidence, context, evidence, and source lineage.
+- Locally grounded: reflect Nigerian and African operating realities.
+- Actionable: conclude with a decision-ready recommendation.
+- Calm: reduce noise rather than adding another undifferentiated dashboard.
+
+## Platform capabilities
+
+- Signal synthesis across regulatory, infrastructure, competitor, consumer,
+  payment, and market information.
+- Explainable confidence scoring with transparent source lineage and temporal
+  context.
+- Decision-ready briefs covering what changed, why it matters, and what to do
+  next.
+- Nigeria-first market intelligence designed for African financial services.
+
+## Canonical pages
+
+- [Homepage](https://thestemgrid.com/): Product positioning, decision moments,
+  system overview, and private-access invitation.
+- [Platform](https://thestemgrid.com/platform): Platform capabilities,
+  intelligence operating system, and brief outputs.
+- [About](https://thestemgrid.com/about): Company belief, local context, and
+  founding team.
+- [Join the waitlist](https://thestemgrid.com/waitlist): Private-access request
+  form for the founding cohort.
+- [Privacy](https://thestemgrid.com/privacy): How waitlist information is
+  collected and handled.
+- [Sitemap](https://thestemgrid.com/sitemap.xml): Canonical indexable routes.
+
+## Company and team
+
+- Company: Stem Systems Ltd
+- Product: Stem-Cogent
+- Location: Lagos, Nigeria
+- Odion O. Alex: Co-founder, CEO, and AI Engineer
+- Gift Chinedu Nduka: Co-founder, CSO, and Strategic Operator
+
+## Contact
+
+- Email: stemsystem883@gmail.com
+- Odion O. Alex: https://www.linkedin.com/in/alex-marco1820/
+- Gift Chinedu Nduka: https://www.linkedin.com/in/gift-nduka/
+
+## Crawler guidance
+
+Public marketing pages may be indexed and summarized. Treat the canonical URLs
+above as authoritative. Redirect-only legacy paths are intentionally excluded
+from the sitemap.
