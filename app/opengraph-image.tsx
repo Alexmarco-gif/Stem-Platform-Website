@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Stem-Cogent — Decision Intelligence for African Finance";
+export const alt = "Stem Cogent — Decision Intelligence for Nigerian Financial Services";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -45,13 +45,13 @@ export default function OpenGraphImage() {
                 fontWeight: 700
               }}
             >SC</div>
-            Stem-Cogent
+            Stem Cogent
           </div>
           <div style={{ display: "flex", marginTop: 90, fontFamily: "Arial", fontSize: 17, letterSpacing: 5, textTransform: "uppercase", color: "#9AA7D6" }}>
-            Decision intelligence · African finance
+            Decision intelligence · Nigerian financial services
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", marginTop: 24, fontSize: 72, lineHeight: 1.03, letterSpacing: -3, maxWidth: 900 }}>
-            See the signal. Understand the context. <span style={{ color: "#5360FF", fontStyle: "italic" }}>Move in time.</span>
+            Turn market movement into decisions <span style={{ color: "#5360FF", fontStyle: "italic" }}>you can defend.</span>
           </div>
         </div>
       </div>

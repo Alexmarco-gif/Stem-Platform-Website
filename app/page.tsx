@@ -1,45 +1,46 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
+import { IntelligenceStack } from "@/components/IntelligenceStack";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Decision Intelligence for African Finance",
+  title: "Decision Intelligence for Nigerian Financial Services",
   description:
-    "Stem-Cogent turns regulatory, infrastructure, competitor and market signals into explainable intelligence for financial-services leaders.",
+    "Stem Cogent converts fragmented regulatory, competitive, infrastructure, consumer, and market signals into validated, explainable intelligence for Nigerian financial-services teams.",
   alternates: { canonical: "/" }
 };
 
-const moments = [
+const problems = [
+  {
+    icon: "⌁",
+    title: "Signals live in different places",
+    text: "Circulars, status pages, app reviews, announcements, news, and internal research rarely arrive in one usable view."
+  },
   {
     icon: "◎",
-    title: "Regulation change",
-    text: "New directives and enforcement patterns before they disrupt your roadmap."
+    title: "Generic tools miss local reality",
+    text: "CBN policy cycles, NIBSS events, USSD dependencies, telco relationships, and informal distribution change how signals should be read."
   },
   {
     icon: "◌",
-    title: "Competitor move",
-    text: "Product launches, pricing shifts and partnerships as they unfold."
-  },
-  {
-    icon: "⌁",
-    title: "Infrastructure event",
-    text: "Payment and network events that affect uptime and customers."
+    title: "Recent is not the same as important",
+    text: "Without importance, urgency, corroboration, and source quality, teams cannot separate a meaningful shift from market noise."
   }
 ];
 
-const outcomes = [
+const workflows = [
   {
-    title: "A clearer brief before the meeting.",
-    text: "Bring the signal, its implications, and the evidence into one decision-ready view."
+    title: "Start the day with priorities.",
+    text: "A ranked intelligence feed shows the signals that deserve attention, with confidence, source count, domain, and time context."
   },
   {
-    title: "Confidence your leadership can interrogate.",
-    text: "Every insight carries context and source lineage—so teams can challenge the conclusion, not chase the facts."
+    title: "Investigate before you escalate.",
+    text: "Open a signal dossier to inspect evidence, affected entities, related events, historical precedent, and the reasoning behind a recommended action."
   },
   {
-    title: "Fewer blind spots. Better timing.",
-    text: "See the move early enough to protect a plan, adjust a position, or take the opportunity first."
+    title: "Respond while the window is open.",
+    text: "Use event-driven alerts and role-specific digests to move regulatory, competitive, and operational signals into the right team quickly."
   }
 ];
 
@@ -50,76 +51,52 @@ export default function HomePage() {
         <div className="hero-glow" />
         <div className="site-shell hero-grid">
           <Reveal className="hero-copy">
-            <p className="eyebrow eyebrow-light">The signal</p>
+            <p className="eyebrow eyebrow-light">Nigeria-first decision intelligence</p>
             <h1>
-              What changed<br />
-              while you were<br />
-              looking <em>elsewhere.</em>
+              Turn market<br />
+              movement into<br />
+              decisions <em>you can defend.</em>
             </h1>
             <p className="hero-lede">
-              Stem-Cogent is Nigeria-first intelligence for fintech and
-              financial-services leaders. We turn signals others miss into
-              validated, explainable intelligence you can act on.
+              Stem Cogent converts fragmented regulatory, competitive,
+              infrastructure, consumer, macroeconomic, and operational signals
+              into validated intelligence—prioritized for the decision in front
+              of you.
             </p>
             <div className="hero-proof">
-              <span>Early</span>
+              <span>Prioritized</span>
               <span>Explainable</span>
-              <span>Decision-ready</span>
+              <span>Evidence-linked</span>
             </div>
           </Reveal>
-          <Reveal className="brief-card" delay={180}>
-            <div className="brief-topline">
-              <span>◀ Intelligence brief</span>
-              <span>09:42 WAT · 18 MAY 2026</span>
-            </div>
-            <h2><span>⌁</span> Settlement pattern detected</h2>
-            <p>
-              Unusual concentration in weekend settlement activity across 3
-              acquiring banks and 2 PSPs.
-            </p>
-            <div className="confidence">
-              <span className="data-label">Confidence score</span>
-              <div>
-                <strong>86<small>/100</small></strong>
-                <p><b>High</b><br /><span>↑ 24 pts vs last 7 days</span></p>
-              </div>
-            </div>
-            <div className="lineage">
-              <span className="data-label">Source lineage</span>
-              <div><span>NIBSS</span><span>CBN</span><span>USSD</span><span>+7</span></div>
-            </div>
-            <div className="next-move">
-              <i aria-hidden="true">→</i>
-              <p>
-                <span className="data-label">Recommended next move</span>
-                Review weekend settlement limits and liquidity buffers.
-              </p>
-            </div>
+
+          <Reveal className="hero-visual" delay={180}>
+            <IntelligenceStack />
           </Reveal>
         </div>
       </section>
 
       <div className="credibility dark-grid">
-        <span>Validated</span><i>·</i>
-        <span>Explainable</span><i>·</i>
-        <span>Regionally real</span><i>·</i>
-        <span>Decision-ready</span>
+        <span>Deterministic scoring</span><i>·</i>
+        <span>Traceable evidence</span><i>·</i>
+        <span>Human-owned decisions</span><i>·</i>
+        <span>Local context</span>
       </div>
 
       <section className="section section-light moments">
         <div className="site-shell">
           <Reveal className="section-heading centered">
-            <p className="eyebrow">What matters most</p>
-            <h2>The decisions that cannot wait.</h2>
-            <p>Three intelligence moments that shape outcomes in financial services.</p>
+            <p className="eyebrow">The operating problem</p>
+            <h2>Your team does not need more information.</h2>
+            <p>It needs a reliable way to know what matters, why, and how quickly to respond.</p>
           </Reveal>
           <div className="three-grid">
-            {moments.map((moment, index) => (
-              <Reveal key={moment.title} className="moment-card" delay={index * 90}>
-                <i aria-hidden="true">{moment.icon}</i>
-                <h3>{moment.title}</h3>
-                <p>{moment.text}</p>
-                <Link href="/platform">Explore <span aria-hidden="true">→</span></Link>
+            {problems.map((problem, index) => (
+              <Reveal key={problem.title} className="moment-card" delay={index * 90}>
+                <i aria-hidden="true">{problem.icon}</i>
+                <h3>{problem.title}</h3>
+                <p>{problem.text}</p>
+                <Link href="/platform">See how it works <span aria-hidden="true">→</span></Link>
               </Reveal>
             ))}
           </div>
@@ -129,15 +106,15 @@ export default function HomePage() {
       <section className="section system-section dark-grid">
         <div className="site-shell">
           <Reveal className="section-heading centered inverse">
-            <p className="eyebrow eyebrow-light">Our system</p>
-            <h2>From signal to decision.</h2>
-            <p>A repeatable intelligence system built for Nigeria&apos;s financial ecosystem.</p>
+            <p className="eyebrow eyebrow-light">The intelligence operating system</p>
+            <h2>From registered signal to accountable action.</h2>
+            <p>One repeatable system for acquiring, validating, contextualizing, and delivering market intelligence.</p>
           </Reveal>
           <div className="process-grid">
             {[
-              ["1", "Detect", "We scan policy, payments, infrastructure, markets and behaviour."],
-              ["2", "Validate", "We validate what matters with source lineage and confidence scoring."],
-              ["3", "Act", "You receive clear intelligence briefs built for your context."]
+              ["1", "Acquire", "Continuously collect structured and unstructured signals from registered, governed sources."],
+              ["2", "Validate", "Classify, corroborate, score, deduplicate, and connect each signal to entities and history."],
+              ["3", "Deliver", "Rank intelligence into feeds, dossiers, alerts, digests, and grounded investigations."]
             ].map(([number, title, text], index) => (
               <Reveal className="process-step" key={title} delay={index * 90}>
                 <span>{number}</span><h3>{title}</h3><p>{text}</p>
@@ -148,19 +125,23 @@ export default function HomePage() {
             <div className="flow-card">
               <span className="data-label">Signals in</span>
               <ul>
-                <li>Market movements</li><li>Policy changes</li>
-                <li>Infrastructure events</li><li>Competitor behaviour</li>
+                <li>Regulatory documents</li>
+                <li>Competitor activity</li>
+                <li>Infrastructure events</li>
+                <li>Consumer and market signals</li>
               </ul>
             </div>
             <div className="engine">
               <span className="engine-ring"><i /></span>
-              <b>Stem-Cogent</b><small>Intelligence engine</small>
+              <b>Stem Cogent</b><small>Decision intelligence</small>
             </div>
             <div className="flow-card">
-              <span className="data-label">Decision out</span>
+              <span className="data-label">Intelligence out</span>
               <ul>
-                <li>Validated brief</li><li>Confidence score</li>
-                <li>Source lineage</li><li>Recommended move</li>
+                <li>Priority feed and dossiers</li>
+                <li>Confidence and evidence</li>
+                <li>Alerts and executive digests</li>
+                <li>Recommended next action</li>
               </ul>
             </div>
           </Reveal>
@@ -170,24 +151,48 @@ export default function HomePage() {
       <section className="section section-soft outcomes">
         <div className="site-shell">
           <Reveal className="section-heading centered">
-            <p className="eyebrow">Built for accountable teams</p>
-            <h2>Know what matters. Defend the decision.<br />Move in time.</h2>
+            <p className="eyebrow">Built around real workflows</p>
+            <h2>Monitor passively. Investigate actively.<br />Move deliberately.</h2>
             <p>
-              A shared intelligence layer before a market change becomes an
-              expensive surprise.
+              From the first scan of the day to a regulatory escalation or
+              competitor briefing, the evidence stays attached.
             </p>
           </Reveal>
           <div className="three-grid">
-            {outcomes.map((outcome, index) => (
-              <Reveal className="outcome-card" key={outcome.title} delay={index * 90}>
+            {workflows.map((workflow, index) => (
+              <Reveal className="outcome-card" key={workflow.title} delay={index * 90}>
                 <span>0{index + 1}</span>
-                <h3>{outcome.title}</h3>
-                <p>{outcome.text}</p>
+                <h3>{workflow.title}</h3>
+                <p>{workflow.text}</p>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
+
+      <section className="section truth-section">
+        <div className="site-shell truth-grid">
+          <Reveal>
+            <p className="eyebrow">A hard product boundary</p>
+            <h2>The model writes the brief. It does not decide what is true.</h2>
+          </Reveal>
+          <Reveal className="truth-copy" delay={100}>
+            <p>
+              Importance, urgency, confidence, and recommendations are produced
+              by deterministic scoring and rule systems. Language models are
+              constrained to grounded synthesis and readable explanation.
+            </p>
+            <p>
+              Every claim must map back to supplied evidence. Every decision
+              remains owned by a person.
+            </p>
+            <Link className="text-link" href="/platform">
+              Explore the evidence model <span aria-hidden="true">→</span>
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

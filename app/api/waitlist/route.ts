@@ -65,12 +65,12 @@ export async function POST(request: NextRequest) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: process.env.FROM_EMAIL || "Stem-Cogent <onboarding@resend.dev>",
+        from: process.env.FROM_EMAIL || "Stem Cogent <onboarding@resend.dev>",
         to: [notificationEmail],
-        subject: `New Stem-Cogent request — ${escapeHtml(firstName)} ${escapeHtml(lastName)}`,
+        subject: `New Stem Cogent trial request — ${escapeHtml(firstName)} ${escapeHtml(lastName)}`,
         reply_to: email,
         html: `
-          <h2>New private-access request</h2>
+          <h2>New trial-access request</h2>
           <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
           <p><strong>Company:</strong> ${escapeHtml(company || "Not supplied")}</p>

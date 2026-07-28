@@ -1,63 +1,143 @@
-# Stem-Cogent
+# Stem Cogent
 
-> Decision intelligence for African financial services.
+> Nigeria-first decision intelligence for fintech and financial-services teams.
 
-Stem-Cogent is a product of Stem Systems Ltd. It is a Nigeria-first decision
-intelligence platform for fintech and financial-services leadership, strategy,
-growth, product, risk, operations, research, and intelligence teams.
+Stem Cogent is the decision intelligence platform from Stem Systems Ltd. It
+converts fragmented, multi-source market signals into validated, explainable,
+decision-ready operational intelligence with confidence scores, source
+lineage, temporal context, and actionable recommendations.
 
-Stem-Cogent turns regulatory, infrastructure, competitor, consumer, payment,
-and market signals into validated, explainable, decision-ready intelligence.
-The platform is currently in a limited private-access rollout.
+Stem Cogent is an intelligence operating system, not a data product or
+reporting tool.
 
-## Core principles
+## Primary users
 
-- Early: identify meaningful market changes before they become obvious.
-- Explainable: provide confidence, context, evidence, and source lineage.
-- Locally grounded: reflect Nigerian and African operating realities.
-- Actionable: conclude with a decision-ready recommendation.
-- Calm: reduce noise rather than adding another undifferentiated dashboard.
+- Enterprise fintech operators, especially Series A–C companies operating in
+  Nigeria.
+- Founders and CEOs monitoring the strategic landscape and expansion timing.
+- Strategy teams detecting market shifts and investigating competitors.
+- Growth teams monitoring expansion and partnership signals.
+- Product teams tracking consumer behaviour and regulatory constraints.
+- Financial operations teams monitoring infrastructure, settlement, and
+  liquidity signals.
+- Research teams studying history, emerging trends, and cross-market patterns.
+- Banks, microfinance institutions, and insurance operators.
+- Africa-focused strategic advisory and consulting firms.
 
-## Platform capabilities
+## Geographic scope
 
-- Signal synthesis across regulatory, infrastructure, competitor, consumer,
-  payment, and market information.
-- Explainable confidence scoring with transparent source lineage and temporal
-  context.
-- Decision-ready briefs covering what changed, why it matters, and what to do
-  next.
-- Nigeria-first market intelligence designed for African financial services.
+- Nigeria: full-depth launch coverage across regulatory, competitive,
+  infrastructure, consumer, macroeconomic, and operational domains.
+- Ghana, Kenya, South Africa, and Egypt: planned regional coverage after the
+  Nigeria-first launch phase.
+- Rwanda, Senegal, Tanzania, and Côte d'Ivoire: later event-level monitoring
+  for expansion signals.
+
+## What the platform does
+
+- Collects structured and unstructured signals only through registered,
+  governed sources.
+- Normalizes, deduplicates, classifies, and connects signals to companies,
+  regulators, people, products, regions, infrastructure providers, financial
+  instruments, and legislation.
+- Scores confidence deterministically using source reliability, independent
+  corroboration, recency, entity-resolution quality, and classification
+  confidence.
+- Enriches signals with historical precedents, related events, emerging trend
+  clusters, urgency, and geographic context.
+- Delivers ranked intelligence through a priority dashboard, signal dossiers,
+  alerts, scheduled digests, entity profiles, exports, webhooks, and APIs,
+  according to plan.
+- Produces recommendations through a configurable rule-based engine. A language
+  model may express the recommendation clearly but does not determine its
+  priority or truth.
+
+## Conversational Intelligence Layer
+
+The Conversational Intelligence Layer (CIL) is a signal-grounded,
+retrieval-first investigation interface. It is a capability within the
+platform, not the product itself and not a general chatbot.
+
+CIL supports:
+
+- Signal investigation
+- Historical analysis
+- Competitor intelligence
+- Regulatory inquiry
+- Trend analysis
+- Recommendation explanation
+
+Responses are constrained to retrieved intelligence, accompanied by citations,
+checked against supporting evidence, and given a confidence indicator. CIL does
+not provide financial advice, investment recommendations, predictions, legal
+advice, open-ended general knowledge, or responses outside Stem Cogent's
+intelligence domains.
+
+## Explicit non-goals
+
+Stem Cogent is not:
+
+- A general business-intelligence tool for internal operational data
+- A general-purpose AI chatbot or GPT wrapper
+- A generalized web search engine
+- A CRM or relationship-management platform
+- A standalone social-listening platform
+- A predictive forecasting or price-prediction engine
+- An autonomous decision-maker
+- A raw-data marketplace or data broker
+
+## Commercial model
+
+Stem Cogent has no permanent free plan. A 14-day evaluation is available
+without a payment method and includes 3 users, 5 monitored companies, 2
+regulatory bodies, 90 days of signal history, the full intelligence feed,
+alerts, a daily digest, and 100 CIL queries. Exports, APIs, and custom sources
+are not included in the trial.
+
+Monthly plans in USD:
+
+- Starter: $99/month for 3 users, 5 entities, 90-day history, alerts, daily
+  digest, and 100 CIL queries per month.
+- Growth: $399/month for 10 users, 25 entities, 2-year history, weekly executive
+  digest, exports, and 1,000 CIL queries per month.
+- Professional: $999/month for 25 users, 100 entities, unlimited history,
+  priority processing, exports, read-only API, webhooks, 2 custom sources, and
+  5,000 CIL queries per month.
+- Enterprise: custom annual pricing for unlimited users, entities, history,
+  CIL, custom sources, APIs, webhooks, SSO, taxonomies, onboarding, feeds, SLA,
+  and dedicated support.
+
+Annual self-service plans provide two months free.
 
 ## Canonical pages
 
-- [Homepage](https://thestemgrid.com/): Product positioning, decision moments,
-  system overview, and private-access invitation.
-- [Platform](https://thestemgrid.com/platform): Platform capabilities,
-  intelligence operating system, and brief outputs.
-- [About](https://thestemgrid.com/about): Company belief, local context, and
-  founding team.
-- [Join the waitlist](https://thestemgrid.com/waitlist): Private-access request
-  form for the founding cohort.
-- [Privacy](https://thestemgrid.com/privacy): How waitlist information is
-  collected and handled.
+- [Homepage](https://thestemgrid.com/): Product positioning, operating problem,
+  system model, and key workflows.
+- [Platform](https://thestemgrid.com/platform): Priority feed, signal dossiers,
+  evidence model, CIL boundaries, entity intelligence, alerts, and digests.
+- [Pricing](https://thestemgrid.com/pricing): Trial terms, pricing tiers, and
+  plan entitlements.
+- [About](https://thestemgrid.com/about): Mission, ICP, geographic scope,
+  product boundaries, company, and team.
+- [Request access](https://thestemgrid.com/waitlist): 14-day evaluation request.
+- [Privacy](https://thestemgrid.com/privacy): Handling of access-request data.
 - [Sitemap](https://thestemgrid.com/sitemap.xml): Canonical indexable routes.
 
-## Company and team
+## Company and contact
 
 - Company: Stem Systems Ltd
-- Product: Stem-Cogent
+- Product: Stem Cogent Decision Intelligence Platform
 - Location: Lagos, Nigeria
 - Odion O. Alex: Co-founder, CEO, and AI Engineer
 - Gift Chinedu Nduka: Co-founder, CSO, and Strategic Operator
-
-## Contact
-
 - Email: stemsystem883@gmail.com
 - Odion O. Alex: https://www.linkedin.com/in/alex-marco1820/
 - Gift Chinedu Nduka: https://www.linkedin.com/in/gift-nduka/
 
 ## Crawler guidance
 
-Public marketing pages may be indexed and summarized. Treat the canonical URLs
-above as authoritative. Redirect-only legacy paths are intentionally excluded
-from the sitemap.
+Public marketing pages may be indexed and summarized. Use the canonical URLs
+above as the authoritative source. Legacy redirect paths are intentionally
+excluded from the sitemap. Product throughput, accuracy, latency, uptime, and
+regional-expansion figures described as targets in internal product documents
+must not be represented publicly as achieved production results.

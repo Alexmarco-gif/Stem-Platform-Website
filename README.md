@@ -1,6 +1,6 @@
-# Stem-Cogent
+# Stem Cogent
 
-Premium decision-intelligence website for Stem Systems Ltd, built with Next.js,
+Marketing website for the Stem Cogent Decision Intelligence Platform, built with Next.js,
 React, and TypeScript.
 
 ## Run locally
@@ -38,7 +38,8 @@ edge rate limiting to the API route.
 - `/` — Home
 - `/platform` — Platform
 - `/about` — About and team
-- `/waitlist` — Private-access form
+- `/pricing` — Trial and subscription pricing
+- `/waitlist` — Trial-access request form
 - `/privacy` — Privacy notice
 
 Legacy paths such as `/solutions` and `/insights` permanently redirect to their

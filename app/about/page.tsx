@@ -4,17 +4,32 @@ import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Stem Cogent",
   description:
-    "Meet the Nigeria-first team building a calmer, more accountable intelligence layer for African financial services.",
+    "Stem Systems Ltd is building a Nigeria-first decision intelligence operating system for fintech operators and financial-services institutions.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About Stem-Cogent",
+    title: "About Stem Cogent",
     description:
-      "Built from the realities of African financial services—not abstract assumptions.",
+      "Built for the market structures, institutions, infrastructure, and timing that shape Nigerian financial services.",
     url: "/about"
   }
 };
+
+const audiences = [
+  {
+    title: "Enterprise fintech operators",
+    text: "Series A–C teams operating in Nigeria and preparing for regional growth across African markets."
+  },
+  {
+    title: "Financial-services institutions",
+    text: "Banks, microfinance institutions, and insurance operators monitoring regulation, infrastructure, and fintech competition."
+  },
+  {
+    title: "Strategic advisory firms",
+    text: "Africa-focused research and consulting teams that need structured, sourced financial-sector intelligence."
+  }
+];
 
 export default function AboutPage() {
   return (
@@ -22,14 +37,15 @@ export default function AboutPage() {
       <section className="page-hero about-hero">
         <div className="site-shell">
           <Reveal>
-            <p className="eyebrow">About Stem-Cogent</p>
+            <p className="eyebrow">About Stem Cogent</p>
             <h1>
-              Built for the signals<br />that shape <em>African<br />finance.</em>
+              Built for the operating<br />reality of <em>African<br />finance.</em>
             </h1>
             <p>
-              Stem-Cogent is a decision intelligence operating system from Stem
-              Systems Ltd. We are building for leaders who need a clearer
-              understanding of what is changing before they move.
+              Stem Cogent is the decision intelligence platform from Stem
+              Systems Ltd. Our mission is to eliminate strategic guesswork by
+              turning fragmented market signals into validated, explainable,
+              decision-ready operational intelligence.
             </p>
           </Reveal>
         </div>
@@ -39,26 +55,58 @@ export default function AboutPage() {
         <div className="site-shell belief-grid">
           <Reveal>
             <p className="eyebrow eyebrow-light">Our belief</p>
-            <h2>The context changes the decision.</h2>
+            <h2>Local context is part of the evidence.</h2>
           </Reveal>
           <Reveal delay={80}>
             <p>
-              Financial services in Nigeria and across Africa run on
-              relationships, infrastructure, regulation, behaviour, and timing.
-              A useful intelligence system has to see that whole picture.
+              Nigerian financial services run through specific policy cycles,
+              payment infrastructure, telco dependencies, distribution
+              patterns, and institutional relationships. Those conditions
+              change the meaning and urgency of a signal.
             </p>
           </Reveal>
           <Reveal delay={160}>
             <p>
-              That is why Stem-Cogent is local by design: grounded in the forces
-              that shape the market, and built to make those forces easier to
-              act on.
+              That is why Stem Cogent launches with full-depth coverage for
+              Nigeria. Regional expansion is deliberate: Ghana, Kenya, South
+              Africa, and Egypt follow as source coverage and customer demand
+              support equivalent depth.
             </p>
           </Reveal>
         </div>
       </section>
 
-      <section className="section team-section">
+      <section className="section audience-section">
+        <div className="site-shell">
+          <Reveal className="section-heading">
+            <p className="eyebrow">Who we build for</p>
+            <h2>Teams accountable for the next move.</h2>
+            <p>
+              The platform is designed for decisions with commercial,
+              regulatory, product, growth, and operational consequences.
+            </p>
+          </Reveal>
+          <div className="three-grid">
+            {audiences.map((audience, index) => (
+              <Reveal className="outcome-card audience-card" key={audience.title} delay={index * 90}>
+                <span>0{index + 1}</span>
+                <h3>{audience.title}</h3>
+                <p>{audience.text}</p>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal className="role-strip">
+            <span>Founder / CEO</span>
+            <span>Strategy</span>
+            <span>Growth</span>
+            <span>Product</span>
+            <span>Financial operations</span>
+            <span>Research</span>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section team-section section-soft">
         <div className="site-shell">
           <Reveal className="section-heading">
             <p className="eyebrow">The team behind Stem</p>
@@ -82,7 +130,7 @@ export default function AboutPage() {
               <div className="team-info">
                 <h3>Odion O. Alex</h3>
                 <span>Co-founder · CEO & AI Engineer</span>
-                <p>Building intelligent systems for a more legible financial ecosystem.</p>
+                <p>Building the intelligence infrastructure and product system behind Stem Cogent.</p>
               </div>
             </Reveal>
             <Reveal className="team-card" delay={100}>
@@ -98,7 +146,7 @@ export default function AboutPage() {
               <div className="team-info">
                 <h3>Gift Chinedu Nduka</h3>
                 <span>Co-founder · CSO & Strategic Operator</span>
-                <p>Shaping the commercial direction and path from signal to scale.</p>
+                <p>Shaping the commercial direction and the path from intelligence to operating value.</p>
               </div>
             </Reveal>
           </div>
@@ -108,20 +156,21 @@ export default function AboutPage() {
       <section className="section about-close">
         <div className="site-shell about-close-grid">
           <Reveal>
-            <p className="eyebrow">What we are building</p>
-            <h2>A calmer way to see what matters.</h2>
+            <p className="eyebrow">What we will not become</p>
+            <h2>More software that asks you to trust a black box.</h2>
           </Reveal>
           <Reveal delay={100}>
             <p>
-              We believe teams should spend less time hunting through scattered
-              information and more time making decisions with conviction.
+              Stem Cogent is not a general BI tool, open-ended chatbot, social
+              listening suite, forecasting engine, autonomous decision-maker,
+              or raw-data marketplace.
             </p>
             <p>
-              Our work brings early signals, transparent sources, and useful
-              recommendations into a single intelligence practice.
+              It is a governed market-intelligence system that keeps evidence
+              visible and decision ownership human.
             </p>
-            <Link className="button button-primary" href="/waitlist">
-              Join the waitlist <span aria-hidden="true">↗</span>
+            <Link className="button button-primary" href="/platform">
+              Explore the platform <span aria-hidden="true">↗</span>
             </Link>
           </Reveal>
         </div>

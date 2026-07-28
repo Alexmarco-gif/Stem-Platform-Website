@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Stem-Cogent",
-    short_name: "Stem-Cogent",
-    description: "Decision intelligence for African financial services.",
+    name: "Stem Cogent Decision Intelligence Platform",
+    short_name: "Stem Cogent",
+    description: "Nigeria-first decision intelligence for financial services.",
     start_url: "/",
     display: "standalone",
     background_color: "#F7F8FF",

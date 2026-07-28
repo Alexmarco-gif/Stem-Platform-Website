@@ -6,24 +6,24 @@ export function CTASection() {
     <section className="cta-section blue-grid">
       <div className="site-shell cta-grid">
         <Reveal>
-          <p className="eyebrow eyebrow-light">Private access · Launching soon</p>
+          <p className="eyebrow eyebrow-light">14-day evaluation · No payment required</p>
           <h2>
-            Make your next<br />
-            move <em>the informed<br />one.</em>
+            Bring us a real<br />
+            decision. <em>Leave with<br />clarity.</em>
           </h2>
           <p className="cta-copy">
-            Join the Stem-Cogent waitlist for early platform access and launch
-            updates.
+            Request access to the founding cohort and evaluate Stem Cogent
+            against the signals your team already needs to understand.
           </p>
         </Reveal>
         <Reveal className="cta-action" delay={120}>
           <ul className="check-list">
-            <li>Early access to the platform</li>
-            <li>Shape features with your input</li>
-            <li>Priority onboarding</li>
+            <li>3 users and 90 days of signal history</li>
+            <li>Priority feed, alerts, and daily digest</li>
+            <li>100 grounded investigation queries</li>
           </ul>
           <Link className="button button-light" href="/waitlist">
-            Become a founding customer <span aria-hidden="true">→</span>
+            Request trial access <span aria-hidden="true">→</span>
           </Link>
         </Reveal>
       </div>

@@ -8,17 +8,62 @@ import { Brand } from "./Brand";
 const links = [
   { href: "/", label: "Home" },
   { href: "/platform", label: "Platform" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" }
 ];
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [pastThreshold, setPastThreshold] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
+  const onHome = pathname === "/";
 
   useEffect(() => setOpen(false), [pathname]);
 
+  useEffect(() => {
+    let frame = 0;
+
+    function updateHeaderState() {
+      frame = 0;
+      const scrollTop = window.scrollY;
+      const hero = document.querySelector<HTMLElement>(".hero");
+      const heroEnd = hero ? hero.offsetTop + hero.offsetHeight - 72 : 0;
+
+      setPastThreshold(!onHome || scrollTop > 80);
+      setPastHero(!onHome || scrollTop >= heroEnd);
+    }
+
+    function onScroll() {
+      if (!frame) frame = window.requestAnimationFrame(updateHeaderState);
+    }
+
+    updateHeaderState();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, [onHome]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
-    <header className="site-header">
+    <header
+      className={[
+        "site-header",
+        !onHome || pastThreshold ? "header-surface" : "header-hero",
+        !onHome || pastHero ? "past-hero" : "",
+        open ? "menu-open" : ""
+      ].join(" ")}
+    >
       <div className="site-shell header-inner">
         <Brand />
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -33,8 +78,11 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link className="button button-primary header-cta" href="/waitlist">
-          Join waitlist <span aria-hidden="true">↗</span>
+        <Link
+          className={`button header-cta ${!onHome || pastHero ? "button-primary" : "button-ghost"}`}
+          href="/waitlist"
+        >
+          Request access <span aria-hidden="true">↗</span>
         </Link>
         <button
           className="menu-button"
@@ -50,6 +98,7 @@ export function Header() {
       </div>
       <div id="mobile-navigation" className={`mobile-nav ${open ? "open" : ""}`}>
         <nav className="site-shell" aria-label="Mobile navigation">
+          <p className="mobile-nav-label">Stem · Navigate</p>
           {links.map((link, index) => (
             <Link
               key={link.href}
@@ -62,8 +111,9 @@ export function Header() {
             </Link>
           ))}
           <Link className="button button-primary" href="/waitlist">
-            Join the private waitlist <span aria-hidden="true">↗</span>
+            Request trial access <span aria-hidden="true">↗</span>
           </Link>
+          <p className="mobile-nav-foot">Decision intelligence for Nigerian financial services.</p>
         </nav>
       </div>
     </header>

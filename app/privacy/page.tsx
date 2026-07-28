@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Notice",
-  description: "How Stem Systems Ltd handles private-access request information.",
+  description: "How Stem Systems Ltd handles Stem Cogent trial-access request information.",
   alternates: { canonical: "/privacy" }
 };
 
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <h1>Privacy, in plain language.</h1>
         <p className="legal-intro">
           This notice explains how we handle information submitted through the
-          Stem-Cogent private-access form.
+          Stem Cogent trial-access form.
         </p>
         <section>
           <h2>What we collect</h2>
@@ -28,8 +28,8 @@ export default function PrivacyPage() {
           <h2>Why we use it</h2>
           <p>
             We use this information to review fit for early access, understand
-            product needs, and contact you about Stem-Cogent. We do not sell
-            waitlist information.
+            product needs, and contact you about Stem Cogent. We do not sell
+            trial-request information.
           </p>
         </section>
         <section>

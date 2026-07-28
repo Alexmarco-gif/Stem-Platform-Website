@@ -3,13 +3,13 @@ import { WaitlistForm } from "@/components/WaitlistForm";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Join the Waitlist",
+  title: "Request Trial Access",
   description:
-    "Request private access to Stem-Cogent and help shape decision intelligence for African financial services.",
+    "Request a 14-day Stem Cogent evaluation with priority intelligence, alerts, daily digests, 90 days of history, and grounded investigations.",
   alternates: { canonical: "/waitlist" },
   openGraph: {
-    title: "Join the Stem-Cogent Private Waitlist",
-    description: "Get early access, influence the product, and receive priority onboarding.",
+    title: "Request a 14-Day Stem Cogent Evaluation",
+    description: "Evaluate Stem Cogent against a real regulatory, competitive, or operational intelligence need.",
     url: "/waitlist"
   }
 };
@@ -19,20 +19,22 @@ export default function WaitlistPage() {
     <section className="waitlist-page blue-grid">
       <div className="site-shell waitlist-grid">
         <Reveal className="waitlist-copy">
-          <p className="eyebrow eyebrow-light">Private access · Launching soon</p>
-          <h1>Make your next<br />move <em>the informed<br />one.</em></h1>
+          <p className="eyebrow eyebrow-light">Founding cohort · 14-day evaluation</p>
+          <h1>Test the platform<br />against a <em>real<br />decision.</em></h1>
           <p>
-            We are opening Stem-Cogent carefully to strategy, growth, product,
-            operations and risk teams across African financial services.
+            Stem Cogent is opening carefully to fintech and financial-services
+            teams with an active regulatory, competitor, infrastructure,
+            expansion, or market-intelligence need.
           </p>
           <ul className="check-list">
-            <li>See meaningful changes before they become obvious</li>
-            <li>Understand confidence, evidence and source lineage</li>
-            <li>Shape the product around your operating reality</li>
+            <li>3 users and 90 days of signal history</li>
+            <li>5 companies and 2 regulatory bodies on your watchlist</li>
+            <li>Full intelligence feed, alerts, and daily digest</li>
+            <li>100 grounded investigation queries</li>
           </ul>
           <div className="access-note">
             <span>01</span>
-            <p><b>Limited founding cohort</b><br />Every request is reviewed by the team.</p>
+            <p><b>No payment method required</b><br />Every request is reviewed for operating fit.</p>
           </div>
         </Reveal>
         <Reveal delay={120}>

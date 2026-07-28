@@ -8,17 +8,20 @@ const siteUrl = "https://thestemgrid.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Stem-Cogent | Decision Intelligence for African Finance",
-    template: "%s | Stem-Cogent"
+    default: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
+    template: "%s | Stem Cogent"
   },
   description:
-    "Validated, explainable decision intelligence for Nigerian fintech and financial-services leaders.",
-  applicationName: "Stem-Cogent",
+    "Nigeria-first decision intelligence that converts fragmented market signals into validated, explainable, decision-ready operational intelligence.",
+  applicationName: "Stem Cogent",
   keywords: [
     "decision intelligence Nigeria",
-    "African fintech intelligence",
-    "financial services market signals",
-    "business intelligence Nigeria"
+    "Nigerian fintech intelligence",
+    "financial services market intelligence",
+    "regulatory intelligence Nigeria",
+    "competitor intelligence fintech",
+    "financial infrastructure monitoring",
+    "African financial services intelligence"
   ],
   authors: [{ name: "Stem Systems Ltd" }],
   creator: "Stem Systems Ltd",
@@ -33,18 +36,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NG",
-    siteName: "Stem-Cogent",
+    siteName: "Stem Cogent",
     url: siteUrl,
-    title: "Stem-Cogent | Decision Intelligence for African Finance",
+    title: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
     description:
-      "Detect meaningful market changes early and move with explainable confidence.",
+      "Turn fragmented regulatory, competitive, infrastructure, consumer, and market signals into intelligence your team can defend.",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stem-Cogent | Decision Intelligence for African Finance",
+    title: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
     description:
-      "Detect meaningful market changes early and move with explainable confidence.",
+      "Validated, explainable, decision-ready market intelligence for Nigerian financial services.",
     images: ["/opengraph-image"]
   },
   robots: { index: true, follow: true }
@@ -62,13 +65,13 @@ const organization = {
   "@type": "Organization",
   "@id": `${siteUrl}/#organization`,
   name: "Stem Systems Ltd",
-  alternateName: "Stem-Cogent",
+  alternateName: "Stem",
   url: siteUrl,
   logo: `${siteUrl}/v4.png`,
   image: `${siteUrl}/opengraph-image`,
   email: "stemsystem883@gmail.com",
   description:
-    "A decision intelligence company building for African financial services.",
+    "The company building Stem Cogent, a Nigeria-first decision intelligence operating system for fintech and financial-services teams.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lagos",
@@ -85,6 +88,43 @@ const organization = {
   ]
 };
 
+const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: "Stem Cogent",
+  url: siteUrl,
+  publisher: { "@id": `${siteUrl}/#organization` },
+  inLanguage: "en-NG"
+};
+
+const softwareApplication = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": `${siteUrl}/#software`,
+  name: "Stem Cogent Decision Intelligence Platform",
+  alternateName: "Stem Cogent",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  url: `${siteUrl}/platform`,
+  description:
+    "An event-driven decision intelligence platform that converts governed market signals into prioritized feeds, evidence-backed dossiers, alerts, digests, entity intelligence, and grounded investigations.",
+  provider: { "@id": `${siteUrl}/#organization` },
+  audience: {
+    "@type": "BusinessAudience",
+    audienceType:
+      "Fintech operators, financial-services institutions, and Africa-focused strategic advisory firms"
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "USD",
+    lowPrice: "99",
+    highPrice: "999",
+    offerCount: "3",
+    url: `${siteUrl}/pricing`
+  }
+};
+
 export default function RootLayout({
   children
 }: Readonly<{ children: React.ReactNode }>) {
@@ -98,6 +138,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplication) }}
         />
       </body>
     </html>

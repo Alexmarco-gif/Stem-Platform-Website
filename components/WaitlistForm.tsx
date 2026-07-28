@@ -37,10 +37,10 @@ export function WaitlistForm() {
       <div className="form-card success-card" role="status" tabIndex={-1}>
         <span className="success-icon">✓</span>
         <p className="eyebrow">Request received</p>
-        <h2>You&apos;re on the list.</h2>
+        <h2>Your evaluation request is in.</h2>
         <p>
-          Thank you for your interest in Stem-Cogent. We&apos;ll review your
-          request and contact you as private access opens.
+          Thank you for your interest in Stem Cogent. We&apos;ll review the
+          operating need you shared and contact you about trial activation.
         </p>
         <button className="text-button" type="button" onClick={() => setState("idle")}>
           Submit another request →
@@ -52,9 +52,9 @@ export function WaitlistForm() {
   return (
     <form className="form-card" onSubmit={handleSubmit} noValidate>
       <div className="form-heading">
-        <p className="eyebrow">Request access</p>
-        <h2>Tell us where you&apos;re making decisions.</h2>
-        <p>We&apos;ll use this to understand fit for the founding cohort.</p>
+        <p className="eyebrow">Request a 14-day evaluation</p>
+        <h2>What decision should become easier?</h2>
+        <p>We use this context to assess fit and configure your evaluation.</p>
       </div>
       <div className="form-row">
         <label>
@@ -90,22 +90,22 @@ export function WaitlistForm() {
         </label>
       </div>
       <label>
-        What decision intelligence do you need?
-        <textarea name="needs" rows={4} placeholder="A short note is enough." />
+        What market decision or recurring workflow do you need to improve?
+        <textarea name="needs" rows={4} placeholder="For example: regulatory response, competitor monitoring, settlement risk…" />
       </label>
       <label className="consent">
         <input type="checkbox" name="consent" value="yes" required />
         <span>
-          I agree that Stem Systems Ltd may contact me about private access.
+          I agree that Stem Systems Ltd may contact me about trial access.
           See the <Link href="/privacy">privacy notice</Link>.
         </span>
       </label>
       {state === "error" && <p className="form-error" role="alert">{message}</p>}
       <button className="button button-primary submit-button" type="submit" disabled={state === "submitting"}>
-        {state === "submitting" ? "Sending request…" : "Request private access"}
+        {state === "submitting" ? "Sending request…" : "Request 14-day access"}
         <span aria-hidden="true">{state === "submitting" ? "◌" : "→"}</span>
       </button>
-      <p className="form-footnote">No noise. We&apos;ll only contact you about Stem-Cogent access.</p>
+      <p className="form-footnote">No card required. We&apos;ll only contact you about Stem Cogent access.</p>
     </form>
   );
 }
