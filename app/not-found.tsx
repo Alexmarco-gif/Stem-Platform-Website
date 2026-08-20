@@ -9,7 +9,7 @@ export default function NotFound() {
       <p>The page may have moved, or the source is no longer active.</p>
       <div>
         <Link className="button button-primary" href="/">Return home</Link>
-        <Link className="button button-secondary" href="/platform">Explore platform</Link>
+        <Link className="button button-secondary" href="/product">Explore product</Link>
       </div>
     </section>
   );

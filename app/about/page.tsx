@@ -11,24 +11,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Stem Cogent",
     description:
-      "Built for the market structures, institutions, infrastructure, and timing that shape Nigerian financial services.",
+      "Built from the operating reality, infrastructure and local context of African fintech.",
     url: "/about"
   }
 };
 
 const audiences = [
-  {
-    title: "Enterprise fintech operators",
-    text: "Series A–C teams operating in Nigeria and preparing for regional growth across African markets."
-  },
-  {
-    title: "Financial-services institutions",
-    text: "Banks, microfinance institutions, and insurance operators monitoring regulation, infrastructure, and fintech competition."
-  },
-  {
-    title: "Strategic advisory firms",
-    text: "Africa-focused research and consulting teams that need structured, sourced financial-sector intelligence."
-  }
+  { title: "Founders and executives", text: "See the developments that can change direction, revenue, risk or execution." },
+  { title: "Operating leaders", text: "Give strategy, operations, finance and product teams relevance shaped around what they own." },
+  { title: "Nigerian fintech teams", text: "Start with local regulatory, infrastructure, competitive and customer context—not generic global coverage." }
 ];
 
 export default function AboutPage() {
@@ -109,8 +100,8 @@ export default function AboutPage() {
             <p className="eyebrow">The team behind Stem</p>
             <h2>Building the intelligence layer<br />financial teams deserve.</h2>
             <p>
-              A focused team working from the realities of Nigerian financial
-              services—not abstract assumptions.
+              A focused team working from the realities of Nigerian fintech—not
+              abstract assumptions.
             </p>
           </Reveal>
           <div className="team-grid">
@@ -166,8 +157,8 @@ export default function AboutPage() {
               It is a governed market-intelligence system that keeps evidence
               visible and decision ownership human.
             </p>
-            <Link className="button button-primary" href="/platform">
-              Explore the platform <span aria-hidden="true">↗</span>
+            <Link className="button button-primary" href="/product">
+              Explore the product <span aria-hidden="true">↗</span>
             </Link>
           </Reveal>
         </div>
