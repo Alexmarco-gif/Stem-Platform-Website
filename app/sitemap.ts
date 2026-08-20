@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://thestemgrid.com";
-  const lastModified = new Date("2026-07-28");
+  const lastModified = new Date("2026-08-20");
   return [
     { url: baseUrl, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/product`, lastModified, changeFrequency: "monthly", priority: 0.9 },
