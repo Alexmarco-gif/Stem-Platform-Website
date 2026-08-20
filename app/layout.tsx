@@ -8,20 +8,20 @@ const siteUrl = "https://thestemgrid.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
+    default: "Stem Cogent | Decision Intelligence for Nigerian Fintechs",
     template: "%s | Stem Cogent"
   },
   description:
-    "Nigeria-first decision intelligence that converts fragmented market signals into validated, explainable, decision-ready operational intelligence.",
+    "Know which external changes matter to your fintech—and what decision they require.",
   applicationName: "Stem Cogent",
   keywords: [
     "decision intelligence Nigeria",
     "Nigerian fintech intelligence",
-    "financial services market intelligence",
+    "fintech decision intelligence",
     "regulatory intelligence Nigeria",
     "competitor intelligence fintech",
     "financial infrastructure monitoring",
-    "African financial services intelligence"
+    "Nigerian fintech intelligence"
   ],
   authors: [{ name: "Stem Systems Ltd" }],
   creator: "Stem Systems Ltd",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     locale: "en_NG",
     siteName: "Stem Cogent",
     url: siteUrl,
-    title: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
+    title: "Stem Cogent | Decision Intelligence for Nigerian Fintechs",
     description:
-      "Turn fragmented regulatory, competitive, infrastructure, consumer, and market signals into intelligence your team can defend.",
+      "Know which changes matter to your fintech—and what decision they require.",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stem Cogent | Decision Intelligence for Nigerian Financial Services",
+    title: "Stem Cogent | Decision Intelligence for Nigerian Fintechs",
     description:
-      "Validated, explainable, decision-ready market intelligence for Nigerian financial services.",
+      "Evidence-backed Decision Briefs for Nigerian fintech teams.",
     images: ["/opengraph-image"]
   },
   robots: { index: true, follow: true }

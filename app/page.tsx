@@ -1,199 +1,54 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
-import { IntelligenceStack } from "@/components/IntelligenceStack";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Decision Intelligence for Nigerian Financial Services",
-  description:
-    "Stem Cogent converts fragmented regulatory, competitive, infrastructure, consumer, and market signals into validated, explainable intelligence for Nigerian financial-services teams.",
+  title: "Decision Intelligence for Nigerian Fintechs",
+  description: "Stem Cogent connects verified external changes to your fintech's products, priorities and exposures—then turns what matters into evidence-backed Decision Briefs.",
   alternates: { canonical: "/" }
 };
 
-const problems = [
-  {
-    icon: "⌁",
-    title: "Signals live in different places",
-    text: "Circulars, status pages, app reviews, announcements, news, and internal research rarely arrive in one usable view."
-  },
-  {
-    icon: "◎",
-    title: "Generic tools miss local reality",
-    text: "CBN policy cycles, NIBSS events, USSD dependencies, telco relationships, and informal distribution change how signals should be read."
-  },
-  {
-    icon: "◌",
-    title: "Recent is not the same as important",
-    text: "Without importance, urgency, corroboration, and source quality, teams cannot separate a meaningful shift from market noise."
-  }
+const value = [
+  ["Protect revenue", "Understand when infrastructure failures, competitive moves or customer shifts threaten important products and commercial activity."],
+  ["Avoid unnecessary cost", "Identify relevant developments before teams spend time responding to noise or discover requirements late."],
+  ["Move products faster", "Connect regulatory and market changes to active products and launches before they become last-minute blockers."],
+  ["Reduce decision delay", "Give the responsible leader a clear brief containing the exposure, evidence, decision and time window."]
 ];
 
-const workflows = [
-  {
-    title: "Start the day with priorities.",
-    text: "A ranked intelligence feed shows the signals that deserve attention, with confidence, source count, domain, and time context."
-  },
-  {
-    title: "Investigate before you escalate.",
-    text: "Open a signal dossier to inspect evidence, affected entities, related events, historical precedent, and the reasoning behind a recommended action."
-  },
-  {
-    title: "Respond while the window is open.",
-    text: "Use event-driven alerts and role-specific digests to move regulatory, competitive, and operational signals into the right team quickly."
-  }
+const contexts = [
+  ["01", "Company Context", "What does your fintech actually do?", "Products · Markets · Customer segments · Competitors · Dependencies · Regulatory exposure"],
+  ["02", "Decision Lens", "What are you responsible for?", "CEO · Strategy · Operations · Finance · Product · Growth · Compliance"],
+  ["03", "Focus Areas", "What matters right now?", "A launch · Expansion · A competitor · Merchant profitability · Reliability · Regulation"]
 ];
 
 export default function HomePage() {
-  return (
-    <>
-      <section className="hero dark-grid">
-        <div className="hero-glow" />
-        <div className="site-shell hero-grid">
-          <Reveal className="hero-copy">
-            <p className="eyebrow eyebrow-light">Nigeria-first decision intelligence</p>
-            <h1>
-              Turn market<br />
-              movement into<br />
-              decisions <em>you can defend.</em>
-            </h1>
-            <p className="hero-lede">
-              Stem Cogent converts fragmented regulatory, competitive,
-              infrastructure, consumer, macroeconomic, and operational signals
-              into validated intelligence—prioritized for the decision in front
-              of you.
-            </p>
-            <div className="hero-proof">
-              <span>Prioritized</span>
-              <span>Explainable</span>
-              <span>Evidence-linked</span>
-            </div>
-          </Reveal>
-
-          <Reveal className="hero-visual" delay={180}>
-            <IntelligenceStack />
-          </Reveal>
-        </div>
-      </section>
-
-      <div className="credibility dark-grid">
-        <span>Deterministic scoring</span><i>·</i>
-        <span>Traceable evidence</span><i>·</i>
-        <span>Human-owned decisions</span><i>·</i>
-        <span>Local context</span>
+  return <>
+    <section className="v2-hero">
+      <div className="site-shell v2-hero-grid">
+        <Reveal className="v2-hero-copy">
+          <p className="eyebrow">Nigeria-first fintech decision intelligence</p>
+          <h1>Know what changed.<br />Know why it matters to your fintech.<br /><em>Know what needs deciding.</em></h1>
+          <p>Stem Cogent connects regulatory, competitor, infrastructure, customer and market developments to your fintech&apos;s products, priorities and exposures—then turns the changes that matter into evidence-backed Decision Briefs.</p>
+          <div className="hero-actions"><Link className="button button-primary" href="/pilot">Request 21-Day Pilot →</Link><Link className="text-link" href="/how-it-works">See how Stem Cogent works →</Link></div>
+          <small>Built for fintech founders, strategy, operations, finance and product teams.</small>
+        </Reveal>
+        <Reveal className="decision-preview" delay={120}>
+          <div className="preview-greeting"><span>Good morning, Tunde</span><b>3 decisions require your attention</b></div>
+          <div className="preview-brief"><p className="priority">REGULATORY · HIGH PRIORITY</p><h2>CBN issues new requirement affecting wallet onboarding</h2><div><b>Why this matters to you</b><p>Your company operates a wallet product in Nigeria and has product onboarding configured as a current focus area.</p></div><p className="tags">Affected Product · Onboarding · Nigeria</p><div><b>Decision required</b><p>Determine whether the planned onboarding release requires modification before implementation.</p></div><footer><span>Evidence: CBN · Official source</span><strong>Confidence: High</strong></footer><button>Open Decision Brief</button><button className="quiet">Investigate</button></div>
+        </Reveal>
       </div>
+    </section>
 
-      <section className="section section-light moments">
-        <div className="site-shell">
-          <Reveal className="section-heading centered">
-            <p className="eyebrow">The operating problem</p>
-            <h2>Your team does not need more information.</h2>
-            <p>It needs a reliable way to know what matters, why, and how quickly to respond.</p>
-          </Reveal>
-          <div className="three-grid">
-            {problems.map((problem, index) => (
-              <Reveal key={problem.title} className="moment-card" delay={index * 90}>
-                <i aria-hidden="true">{problem.icon}</i>
-                <h3>{problem.title}</h3>
-                <p>{problem.text}</p>
-                <Link href="/platform">See how it works <span aria-hidden="true">→</span></Link>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="section v2-problem"><div className="site-shell split-grid"><Reveal><p className="eyebrow">The real problem</p><h2>Your fintech already has information.<br />The expensive part is knowing when it requires a decision.</h2><p>Regulatory updates arrive. Competitors move. Payment infrastructure fails. Customer behaviour changes. Markets shift.</p><p>Dashboards explain what is happening inside your company. The difficult part is connecting that to the outside world quickly enough to know whether it affects you.</p></Reveal><Reveal className="question-flow" delay={100}>{["What changed", "Does it matter to us?", "What is exposed?", "What is at stake?", "What needs deciding?"].map((item) => <div key={item}>{item}<span>↓</span></div>)}</Reveal></div></section>
 
-      <section className="section system-section dark-grid">
-        <div className="site-shell">
-          <Reveal className="section-heading centered inverse">
-            <p className="eyebrow eyebrow-light">The intelligence operating system</p>
-            <h2>From registered signal to accountable action.</h2>
-            <p>One repeatable system for acquiring, validating, contextualizing, and delivering market intelligence.</p>
-          </Reveal>
-          <div className="process-grid">
-            {[
-              ["1", "Acquire", "Continuously collect structured and unstructured signals from registered, governed sources."],
-              ["2", "Validate", "Classify, corroborate, score, deduplicate, and connect each signal to entities and history."],
-              ["3", "Deliver", "Rank intelligence into feeds, dossiers, alerts, digests, and grounded investigations."]
-            ].map(([number, title, text], index) => (
-              <Reveal className="process-step" key={title} delay={index * 90}>
-                <span>{number}</span><h3>{title}</h3><p>{text}</p>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal className="engine-flow">
-            <div className="flow-card">
-              <span className="data-label">Signals in</span>
-              <ul>
-                <li>Regulatory documents</li>
-                <li>Competitor activity</li>
-                <li>Infrastructure events</li>
-                <li>Consumer and market signals</li>
-              </ul>
-            </div>
-            <div className="engine">
-              <span className="engine-ring"><i /></span>
-              <b>Stem Cogent</b><small>Decision intelligence</small>
-            </div>
-            <div className="flow-card">
-              <span className="data-label">Intelligence out</span>
-              <ul>
-                <li>Priority feed and dossiers</li>
-                <li>Confidence and evidence</li>
-                <li>Alerts and executive digests</li>
-                <li>Recommended next action</li>
-              </ul>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+    <section className="section section-soft"><div className="site-shell"><Reveal className="section-heading"><p className="eyebrow">Why teams pay</p><h2>Intelligence becomes valuable when something is at stake.</h2></Reveal><div className="four-grid">{value.map(([title, text], i) => <Reveal className="value-card" key={title} delay={i * 70}><span>0{i + 1}</span><h3>{title}</h3><p>{text}</p></Reveal>)}</div><Reveal><p className="commercial-line">Stem Cogent is not priced around how much information it gives you. It is built around the decisions that information affects.</p></Reveal></div></section>
 
-      <section className="section section-soft outcomes">
-        <div className="site-shell">
-          <Reveal className="section-heading centered">
-            <p className="eyebrow">Built around real workflows</p>
-            <h2>Monitor passively. Investigate actively.<br />Move deliberately.</h2>
-            <p>
-              From the first scan of the day to a regulatory escalation or
-              competitor briefing, the evidence stays attached.
-            </p>
-          </Reveal>
-          <div className="three-grid">
-            {workflows.map((workflow, index) => (
-              <Reveal className="outcome-card" key={workflow.title} delay={index * 90}>
-                <span>0{index + 1}</span>
-                <h3>{workflow.title}</h3>
-                <p>{workflow.text}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="section signal-section"><div className="site-shell"><Reveal className="section-heading centered"><p className="eyebrow">Information vs relevance</p><h2>A signal is not a decision.</h2></Reveal><div className="signal-contrast"><Reveal><span>What everyone can see</span><h3>CBN releases a new circular.</h3><p>Google can find it. AI can summarize it. Your compliance team can read it.</p></Reveal><i>↓</i><Reveal><span>What Stem Cogent works toward</span><h3>This requirement relates to a product you operate, affects an active priority, has an implementation window and creates a decision for Product + Compliance.</h3></Reveal></div><p className="center-note">That&apos;s the difference between information and decision relevance.</p></div></section>
 
-      <section className="section truth-section">
-        <div className="site-shell truth-grid">
-          <Reveal>
-            <p className="eyebrow">A hard product boundary</p>
-            <h2>The model writes the brief. It does not decide what is true.</h2>
-          </Reveal>
-          <Reveal className="truth-copy" delay={100}>
-            <p>
-              Importance, urgency, confidence, and recommendations are produced
-              by deterministic scoring and rule systems. Language models are
-              constrained to grounded synthesis and readable explanation.
-            </p>
-            <p>
-              Every claim must map back to supplied evidence. Every decision
-              remains owned by a person.
-            </p>
-            <Link className="text-link" href="/platform">
-              Explore the evidence model <span aria-hidden="true">→</span>
-            </Link>
-          </Reveal>
-        </div>
-      </section>
+    <section className="section context-section"><div className="site-shell"><Reveal className="section-heading centered"><p className="eyebrow">Your fintech. Your role. Your priorities.</p><h2>The same market event should not look the same to everyone.</h2><p>Stem Cogent combines three layers of context before deciding what deserves your attention.</p></Reveal><div className="three-grid">{contexts.map(([no, title, question, details], i) => <Reveal className="context-card" key={title} delay={i * 80}><span>{no}</span><h3>{title}</h3><b>{question}</b><p>{details}</p></Reveal>)}</div><Reveal className="relevance-equation">Company Context <b>×</b> Decision Lens <b>×</b> Live Signals <strong>= Decision Relevance</strong></Reveal></div></section>
 
-      <CTASection />
-    </>
-  );
+    <section className="section trust-section"><div className="site-shell split-grid"><Reveal><p className="eyebrow">Built for trust</p><h2>AI can write the brief.<br /><em>It does not get to invent the truth.</em></h2></Reveal><Reveal><p>Stem Cogent separates evidence from explanation. Signals are sourced, validated, classified and connected before language models make the intelligence easier to understand.</p><div className="trust-list">{["Verified sources", "Visible evidence", "Explicit confidence", "Human-owned decisions"].map(x => <span key={x}>{x}</span>)}</div></Reveal></div></section>
+    <CTASection />
+  </>;
 }

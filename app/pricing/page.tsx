@@ -17,24 +17,19 @@ export const metadata: Metadata = {
 
 const plans = [
   {
-    name: "Starter",
-    price: "$99",
-    annual: "$990 billed annually",
-    audience: "Founders, early-stage fintechs, and solo strategy operators",
+    name: "Individual",
+    price: "$149",
+    annual: "Monthly subscription",
+    audience: "Individual founders and decision-makers",
     features: [
-      "3 users",
-      "5 monitored entities",
-      "90 days of signal history",
-      "Full feed, alerts, and daily digest",
-      "100 investigation queries / month",
-      "Email support"
+      "1 Decision Lens", "Company Context", "Personal Focus Areas", "Decision Briefs", "Core Nigeria fintech intelligence", "Weekly briefing"
     ]
   },
   {
-    name: "Growth",
-    price: "$399",
-    annual: "$3,990 billed annually",
-    audience: "Scaling fintechs, product teams, and operations leaders",
+    name: "Team",
+    price: "$499",
+    annual: "Monthly subscription",
+    audience: "Strategy, product, finance or operations teams",
     featured: true,
     features: [
       "10 users",
@@ -46,10 +41,10 @@ const plans = [
     ]
   },
   {
-    name: "Professional",
-    price: "$999",
-    annual: "$9,990 billed annually",
-    audience: "Established fintechs, regional operators, and strategy functions",
+    name: "Company",
+    price: "$1,250",
+    annual: "Monthly subscription",
+    audience: "Cross-functional fintech deployments",
     features: [
       "25 users",
       "100 monitored entities",
@@ -63,7 +58,7 @@ const plans = [
     name: "Enterprise",
     price: "Custom",
     annual: "Annual contract",
-    audience: "Banks, large fintechs, investment firms, and regulators",
+    audience: "Larger and regional fintech organisations",
     features: [
       "Unlimited users and entities",
       "Unlimited history and investigations",
@@ -82,12 +77,9 @@ export default function PricingPage() {
         <div className="site-shell pricing-hero-inner">
           <Reveal>
             <p className="eyebrow">Pricing</p>
-            <h1>Pay for operational clarity.<br /><em>Not AI theatre.</em></h1>
+            <h1>Pay for decision relevance.<br /><em>Not another information feed.</em></h1>
             <p>
-              Every plan includes the full intelligence feed, all signal
-              domains, confidence and evidence, and alert delivery. Plans scale
-              with team size, monitored entities, history, investigations, and
-              integration depth.
+              Start with the scope that matches how Stem Cogent will be used inside your fintech.
             </p>
           </Reveal>
           <Reveal className="trial-callout" delay={100}>

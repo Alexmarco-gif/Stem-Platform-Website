@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap");
 
 :root {
-  --blue: #333cff;
-  --blue-hover: #2029df;
-  --navy: #07112b;
+  --blue: #9a6a21;
+  --blue-hover: #765019;
+  --navy: #171713;
   --night: #050a1b;
-  --ink: #101a39;
-  --muted: #606a84;
-  --soft: #f3f5ff;
-  --page: #f7f8ff;
+  --ink: #28261f;
+  --muted: #6e6a60;
+  --soft: #f1efe9;
+  --page: #faf9f5;
   --white: #fff;
   --border: rgba(16, 26, 57, 0.14);
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", Arial, sans-serif;
 }
+
+/* V2: editorial decision-intelligence product */
+.v2-hero { background: #f7f5ef; border-bottom: 1px solid var(--border); }
+.v2-hero-grid { display:grid; grid-template-columns: 1.05fr .95fr; gap:64px; align-items:center; min-height:760px; padding-block:110px 80px; }
+.v2-hero-copy h1 { max-width:720px; margin-bottom:28px; font-size:clamp(50px,5vw,78px); line-height:1.02; letter-spacing:-.055em; }
+.v2-hero-copy h1 em,.trust-section em { color:var(--blue); font-weight:400; }
+.v2-hero-copy > p { max-width:650px; color:var(--muted); font-size:16px; line-height:1.8; }
+.hero-actions { display:flex; align-items:center; gap:25px; margin:32px 0 20px; }.v2-hero-copy small{color:var(--muted);font-size:11px}
+.decision-preview { padding:18px; border:1px solid #d9d5ca; background:#eeece6; box-shadow:0 28px 70px rgba(39,35,25,.12); }
+.preview-greeting { display:flex; justify-content:space-between; padding:12px 14px 24px; font-size:11px; }.preview-greeting span{color:var(--muted)}.preview-greeting b{font-weight:600}
+.preview-brief { padding:30px; background:#fffefa; border:1px solid #ddd8cc; }.preview-brief .priority{color:#a3492a;font-size:9px;font-weight:700;letter-spacing:.16em}.preview-brief h2{font-size:29px;line-height:1.12;letter-spacing:-.035em}.preview-brief div{padding:13px 0;border-top:1px solid #e7e3da}.preview-brief b{font-size:10px;text-transform:uppercase;letter-spacing:.08em}.preview-brief p{margin:6px 0 0;color:var(--muted);font-size:11px;line-height:1.55}.preview-brief .tags{padding:10px;background:#f4f1e8;color:#554b33}.preview-brief footer{display:flex;justify-content:space-between;margin:14px 0 18px;color:var(--muted);font-size:10px}.preview-brief footer strong{color:#4d774a}.preview-brief button{padding:10px 13px;border:0;background:#28261f;color:#fff;font-size:11px;cursor:pointer}.preview-brief button.quiet{margin-left:8px;background:transparent;color:var(--ink);border:1px solid var(--border)}
+.split-grid { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }.split-grid h2{font-size:clamp(42px,4vw,62px);line-height:1.08;letter-spacing:-.045em}.split-grid p{color:var(--muted);font-size:15px}.question-flow{padding:28px 34px;border:1px solid var(--border);background:#fff}.question-flow div{display:flex;justify-content:space-between;padding:12px 0;color:#3a372f;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.question-flow span{color:var(--blue)}
+.value-card,.context-card{padding:30px;border:1px solid var(--border);background:#fff}.value-card span,.context-card>span{color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.12em}.value-card h3,.context-card h3{margin:30px 0 11px;font-size:27px;line-height:1.1}.value-card p,.context-card p{margin:0;color:var(--muted);font-size:12px}.commercial-line{max-width:840px;margin:56px auto 0;text-align:center;font-family:var(--serif);font-size:28px;line-height:1.25}
+.signal-section{background:#24231e;color:#fff}.signal-contrast{display:grid;grid-template-columns:1fr 60px 1fr;gap:30px;align-items:center}.signal-contrast>div{min-height:250px;padding:36px;border:1px solid rgba(255,255,255,.2)}.signal-contrast span{color:#c6bfae;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.signal-contrast h3{margin:24px 0 14px;font-size:29px;line-height:1.12}.signal-contrast p,.center-note{color:#c6c2b7;font-size:13px}.signal-contrast>i{text-align:center;color:#c6913d;font-size:28px;font-style:normal}.center-note{text-align:center;margin:34px 0 0}.context-card b{display:block;margin:22px 0 10px;font-size:13px}.relevance-equation{margin:40px 0 0;text-align:center;font-family:var(--serif);font-size:26px}.relevance-equation b{color:var(--blue);padding-inline:8px}.relevance-equation strong{display:block;margin-top:9px;color:var(--blue);font-weight:500}.trust-section{background:#e8e4da}.trust-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.trust-list span{padding:14px;border:1px solid var(--border);font-size:12px;font-weight:600}
+.v2-page-hero{padding:120px 0 86px;background:#f3f0e7}.v2-page-hero h1{max-width:850px;margin-bottom:22px;font-size:clamp(52px,5.2vw,78px);line-height:1.02;letter-spacing:-.05em}.v2-page-hero>div>p:last-child{max-width:680px;color:var(--muted);font-size:16px}.feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.feature-list article{padding:28px;border-top:2px solid var(--blue);background:#fff}.feature-list h3{font-size:29px;margin-bottom:12px}.feature-list p{color:var(--muted);font-size:13px}.steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border)}.steps-grid article{padding:24px;background:var(--page)}.steps-grid span{color:var(--blue);font-weight:700;font-size:12px}.steps-grid h3{font-size:22px;line-height:1.1}.steps-grid p{font-size:12px;color:var(--muted)}
+@media (max-width:860px){.v2-hero-grid,.split-grid{grid-template-columns:1fr;gap:42px;min-height:auto}.v2-hero-grid{padding-block:90px 64px}.signal-contrast{grid-template-columns:1fr}.signal-contrast>i{padding:0}.steps-grid{grid-template-columns:1fr 1fr}.feature-list{grid-template-columns:1fr}}@media(max-width:640px){.v2-hero-copy h1{font-size:48px}.hero-actions{align-items:flex-start;flex-direction:column}.preview-brief{padding:22px}.signal-contrast>div{min-height:auto}.trust-list{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.split-grid h2{font-size:40px}}
 
 * {
   box-sizing: border-box;

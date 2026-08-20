@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "About Stem Cogent",
   description:
-    "Stem Systems Ltd is building a Nigeria-first decision intelligence operating system for fintech operators and financial-services institutions.",
+    "Stem Systems Ltd is building a Nigeria-first decision intelligence platform for fintech operators.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Stem Cogent",
@@ -39,13 +39,12 @@ export default function AboutPage() {
           <Reveal>
             <p className="eyebrow">About Stem Cogent</p>
             <h1>
-              Built for the operating<br />reality of <em>African<br />finance.</em>
+              Built from the operating<br />reality of <em>African<br />fintech.</em>
             </h1>
             <p>
-              Stem Cogent is the decision intelligence platform from Stem
-              Systems Ltd. Our mission is to eliminate strategic guesswork by
-              turning fragmented market signals into validated, explainable,
-              decision-ready operational intelligence.
+              Stem Cogent exists because fintech teams do not need another
+              stream of information. They need to know which external changes
+              matter to their business before delay becomes expensive.
             </p>
           </Reveal>
         </div>
@@ -59,18 +58,16 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={80}>
             <p>
-              Nigerian financial services run through specific policy cycles,
-              payment infrastructure, telco dependencies, distribution
-              patterns, and institutional relationships. Those conditions
-              change the meaning and urgency of a signal.
+              We begin with Nigeria because decision intelligence only works
+              when local context is treated as part of the system—not added as
+              an afterthought. Policy, payment rails and customer behaviour
+              change what a signal means.
             </p>
           </Reveal>
           <Reveal delay={160}>
             <p>
-              That is why Stem Cogent launches with full-depth coverage for
-              Nigeria. Regional expansion is deliberate: Ghana, Kenya, South
-              Africa, and Egypt follow as source coverage and customer demand
-              support equivalent depth.
+              We will expand market depth deliberately rather than claiming
+              shallow coverage everywhere.
             </p>
           </Reveal>
         </div>
@@ -80,10 +77,10 @@ export default function AboutPage() {
         <div className="site-shell">
           <Reveal className="section-heading">
             <p className="eyebrow">Who we build for</p>
-            <h2>Teams accountable for the next move.</h2>
+            <h2>Nigerian fintech operators are our launch focus.</h2>
             <p>
-              The platform is designed for decisions with commercial,
-              regulatory, product, growth, and operational consequences.
+              Stem Cogent&apos;s architecture can also support banks and broader
+              financial-services institutions, but fintech operators come first.
             </p>
           </Reveal>
           <div className="three-grid">
