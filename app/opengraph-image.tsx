@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Stem Cogent — Decision Intelligence for Nigerian Financial Services";
+export const alt = "Stem Cogent — Decision Intelligence for Nigerian Fintechs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -13,9 +13,9 @@ export default function OpenGraphImage() {
           height: "100%",
           display: "flex",
           position: "relative",
-          background: "#050A1B",
-          color: "white",
-          fontFamily: "Georgia, serif",
+          background: "#F5F6FA",
+          color: "#0B0F1A",
+          fontFamily: "Arial, sans-serif",
           padding: "74px 80px"
         }}
       >
@@ -23,9 +23,9 @@ export default function OpenGraphImage() {
           style={{
             position: "absolute",
             inset: 0,
-            opacity: 0.25,
+            opacity: 0.55,
             backgroundImage:
-              "linear-gradient(rgba(112,137,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(112,137,255,.3) 1px, transparent 1px)",
+              "linear-gradient(rgba(42,75,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(42,75,255,.08) 1px, transparent 1px)",
             backgroundSize: "48px 48px"
           }}
         />
@@ -36,8 +36,8 @@ export default function OpenGraphImage() {
                 width: 48,
                 height: 48,
                 borderRadius: 12,
-                background: "white",
-                color: "#07112B",
+                background: "#2A4BFF",
+                color: "white",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -48,10 +48,10 @@ export default function OpenGraphImage() {
             Stem Cogent
           </div>
           <div style={{ display: "flex", marginTop: 90, fontFamily: "Arial", fontSize: 17, letterSpacing: 5, textTransform: "uppercase", color: "#9AA7D6" }}>
-            Decision intelligence · Nigerian financial services
+            Nigeria-first fintech decision intelligence
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", marginTop: 24, fontSize: 72, lineHeight: 1.03, letterSpacing: -3, maxWidth: 900 }}>
-            Turn market movement into decisions <span style={{ color: "#5360FF", fontStyle: "italic" }}>you can defend.</span>
+            Know which changes matter—and <span style={{ color: "#2A4BFF" }}>what needs deciding.</span>
           </div>
         </div>
       </div>

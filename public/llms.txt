@@ -1,143 +1,65 @@
 # Stem Cogent
 
-> Nigeria-first decision intelligence for fintech and financial-services teams.
+> Decision intelligence for Nigerian fintechs.
 
-Stem Cogent is the decision intelligence platform from Stem Systems Ltd. It
-converts fragmented, multi-source market signals into validated, explainable,
-decision-ready operational intelligence with confidence scores, source
-lineage, temporal context, and actionable recommendations.
+Stem Cogent understands a fintech's Company Context, each leader's Decision Lens and current Focus Areas. It connects verified regulatory, competitor, infrastructure, customer and market developments to that context, then turns relevant changes into evidence-backed Decision Briefs.
 
-Stem Cogent is an intelligence operating system, not a data product or
-reporting tool.
+## Core promise
 
-## Primary users
+Know which changes matter to your fintech—and what decision they require.
 
-- Enterprise fintech operators, especially Series A–C companies operating in
-  Nigeria.
-- Founders and CEOs monitoring the strategic landscape and expansion timing.
-- Strategy teams detecting market shifts and investigating competitors.
-- Growth teams monitoring expansion and partnership signals.
-- Product teams tracking consumer behaviour and regulatory constraints.
-- Financial operations teams monitoring infrastructure, settlement, and
-  liquidity signals.
-- Research teams studying history, emerging trends, and cross-market patterns.
-- Banks, microfinance institutions, and insurance operators.
-- Africa-focused strategic advisory and consulting firms.
+Stem Cogent is not a news feed, general chatbot, autonomous decision-maker or source of fabricated financial estimates. Information explains what happened. Stem Cogent works out why a verified event deserves a specific operator's attention.
 
-## Geographic scope
+## How decision relevance works
 
-- Nigeria: full-depth launch coverage across regulatory, competitive,
-  infrastructure, consumer, macroeconomic, and operational domains.
-- Ghana, Kenya, South Africa, and Egypt: planned regional coverage after the
-  Nigeria-first launch phase.
-- Rwanda, Senegal, Tanzania, and Côte d'Ivoire: later event-level monitoring
-  for expansion signals.
+Company Context × Decision Lens × Live Signals = Decision Relevance
 
-## What the platform does
+1. Configure products, markets, customers, competitors, infrastructure dependencies and regulatory exposure.
+2. Configure the responsibility of the founder, strategy, operations, finance, product, growth or compliance leader.
+3. Add active Focus Areas such as a launch, expansion, competitor, pricing issue or infrastructure dependency.
+4. Monitor and verify relevant external developments.
+5. Connect each signal to business exposure and the responsible person.
+6. Build a Decision Brief with stakes, the decision required, its window and visible evidence.
+7. A human chooses to watch, escalate, act or dismiss.
 
-- Collects structured and unstructured signals only through registered,
-  governed sources.
-- Normalizes, deduplicates, classifies, and connects signals to companies,
-  regulators, people, products, regions, infrastructure providers, financial
-  instruments, and legislation.
-- Scores confidence deterministically using source reliability, independent
-  corroboration, recency, entity-resolution quality, and classification
-  confidence.
-- Enriches signals with historical precedents, related events, emerging trend
-  clusters, urgency, and geographic context.
-- Delivers ranked intelligence through a priority dashboard, signal dossiers,
-  alerts, scheduled digests, entity profiles, exports, webhooks, and APIs,
-  according to plan.
-- Produces recommendations through a configurable rule-based engine. A language
-  model may express the recommendation clearly but does not determine its
-  priority or truth.
+Language models may make a brief easier to understand, but do not get to invent its evidence. Sources, confidence and uncertainty remain visible. Decisions remain human-owned.
 
-## Conversational Intelligence Layer
+## Product
 
-The Conversational Intelligence Layer (CIL) is a signal-grounded,
-retrieval-first investigation interface. It is a capability within the
-platform, not the product itself and not a general chatbot.
-
-CIL supports:
-
-- Signal investigation
-- Historical analysis
-- Competitor intelligence
-- Regulatory inquiry
-- Trend analysis
-- Recommendation explanation
-
-Responses are constrained to retrieved intelligence, accompanied by citations,
-checked against supporting evidence, and given a confidence indicator. CIL does
-not provide financial advice, investment recommendations, predictions, legal
-advice, open-ended general knowledge, or responses outside Stem Cogent's
-intelligence domains.
-
-## Explicit non-goals
-
-Stem Cogent is not:
-
-- A general business-intelligence tool for internal operational data
-- A general-purpose AI chatbot or GPT wrapper
-- A generalized web search engine
-- A CRM or relationship-management platform
-- A standalone social-listening platform
-- A predictive forecasting or price-prediction engine
-- An autonomous decision-maker
-- A raw-data marketplace or data broker
+- My Decision Briefing: prioritised developments relevant to an individual's responsibility.
+- Company Lens: cross-functional exposure for the whole fintech.
+- Decision Briefs: what changed, why it matters, affected areas, stakes, decision, window, evidence and ownership.
+- Decision Lens: role-specific relevance.
+- Focus Areas: current company priorities.
+- Wider Intelligence: the broader Nigerian fintech signal environment.
+- Cogent Intelligence Layer: evidence-grounded investigation that begins from a brief, company or signal rather than a blank chat box.
 
 ## Commercial model
 
-Stem Cogent has no permanent free plan. A 14-day evaluation is available
-without a payment method and includes 3 users, 5 monitored companies, 2
-regulatory bodies, 90 days of signal history, the full intelligence feed,
-alerts, a daily digest, and 100 CIL queries. Exports, APIs, and custom sources
-are not included in the trial.
+A 21-day guided founding pilot is configured around one real operating priority. Monthly pricing in USD:
 
-Monthly plans in USD:
+- Individual: $149/month.
+- Team: $499/month.
+- Company: $1,250/month.
+- Enterprise: custom pricing.
 
-- Starter: $99/month for 3 users, 5 entities, 90-day history, alerts, daily
-  digest, and 100 CIL queries per month.
-- Growth: $399/month for 10 users, 25 entities, 2-year history, weekly executive
-  digest, exports, and 1,000 CIL queries per month.
-- Professional: $999/month for 25 users, 100 entities, unlimited history,
-  priority processing, exports, read-only API, webhooks, 2 custom sources, and
-  5,000 CIL queries per month.
-- Enterprise: custom annual pricing for unlimited users, entities, history,
-  CIL, custom sources, APIs, webhooks, SSO, taxonomies, onboarding, feeds, SLA,
-  and dedicated support.
+## Primary users and scope
 
-Annual self-service plans provide two months free.
+Stem Cogent is built first for Nigerian fintech founders and leaders in strategy, operations, finance, product, growth, risk and compliance. Its architecture can support banks and broader financial-services institutions, but fintech operators are the launch focus.
+
+Nigeria is the first deep-coverage market because CBN policy, NIBSS infrastructure, payment rails, telco dependencies, distribution models and local customer behaviour are part of what a signal means.
 
 ## Canonical pages
 
-- [Homepage](https://thestemgrid.com/): Product positioning, operating problem,
-  system model, and key workflows.
-- [Platform](https://thestemgrid.com/platform): Priority feed, signal dossiers,
-  evidence model, CIL boundaries, entity intelligence, alerts, and digests.
-- [Pricing](https://thestemgrid.com/pricing): Trial terms, pricing tiers, and
-  plan entitlements.
-- [About](https://thestemgrid.com/about): Mission, ICP, geographic scope,
-  product boundaries, company, and team.
-- [Request access](https://thestemgrid.com/waitlist): 14-day evaluation request.
-- [Privacy](https://thestemgrid.com/privacy): Handling of access-request data.
-- [Sitemap](https://thestemgrid.com/sitemap.xml): Canonical indexable routes.
+- Homepage: https://thestemgrid.com/
+- Product: https://thestemgrid.com/product
+- Solutions: https://thestemgrid.com/solutions
+- How It Works: https://thestemgrid.com/how-it-works
+- Pricing: https://thestemgrid.com/pricing
+- About: https://thestemgrid.com/about
+- Request Pilot: https://thestemgrid.com/pilot
+- Privacy: https://thestemgrid.com/privacy
 
-## Company and contact
+## Company
 
-- Company: Stem Systems Ltd
-- Product: Stem Cogent Decision Intelligence Platform
-- Location: Lagos, Nigeria
-- Odion O. Alex: Co-founder, CEO, and AI Engineer
-- Gift Chinedu Nduka: Co-founder, CSO, and Strategic Operator
-- Email: stemsystem883@gmail.com
-- Odion O. Alex: https://www.linkedin.com/in/alex-marco1820/
-- Gift Chinedu Nduka: https://www.linkedin.com/in/gift-nduka/
-
-## Crawler guidance
-
-Public marketing pages may be indexed and summarized. Use the canonical URLs
-above as the authoritative source. Legacy redirect paths are intentionally
-excluded from the sitemap. Product throughput, accuracy, latency, uptime, and
-regional-expansion figures described as targets in internal product documents
-must not be represented publicly as achieved production results.
+Stem Systems Ltd · Lagos, Nigeria · stemsystem883@gmail.com

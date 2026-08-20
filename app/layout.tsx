@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "regulatory intelligence Nigeria",
     "competitor intelligence fintech",
     "financial infrastructure monitoring",
-    "Nigerian fintech intelligence"
+    "fintech Decision Briefs"
   ],
   authors: [{ name: "Stem Systems Ltd" }],
   creator: "Stem Systems Ltd",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#07112B",
+  themeColor: "#2A4BFF",
   colorScheme: "light"
 };
 
@@ -71,7 +71,7 @@ const organization = {
   image: `${siteUrl}/opengraph-image`,
   email: "stemsystem883@gmail.com",
   description:
-    "The company building Stem Cogent, a Nigeria-first decision intelligence operating system for fintech and financial-services teams.",
+    "The company building Stem Cogent, Nigeria-first decision intelligence for fintech teams.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lagos",
@@ -106,21 +106,21 @@ const softwareApplication = {
   alternateName: "Stem Cogent",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  url: `${siteUrl}/platform`,
+  url: `${siteUrl}/product`,
   description:
-    "An event-driven decision intelligence platform that converts governed market signals into prioritized feeds, evidence-backed dossiers, alerts, digests, entity intelligence, and grounded investigations.",
+    "Stem Cogent connects verified external changes to a fintech's company context, responsibilities and priorities, then turns relevant developments into evidence-backed Decision Briefs.",
   provider: { "@id": `${siteUrl}/#organization` },
   audience: {
     "@type": "BusinessAudience",
     audienceType:
-      "Fintech operators, financial-services institutions, and Africa-focused strategic advisory firms"
+      "Founders, strategy, operations, finance and product leaders at Nigerian fintechs"
   },
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "USD",
-    lowPrice: "99",
-    highPrice: "999",
-    offerCount: "3",
+    lowPrice: "149",
+    highPrice: "1250",
+    offerCount: "4",
     url: `${siteUrl}/pricing`
   }
 };
